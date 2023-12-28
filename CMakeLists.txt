@@ -10,7 +10,7 @@
 # --- end cisst license ---
 
 cmake_minimum_required (VERSION 3.10)
-project (robot_io VERSION 2.2.0)
+project (robot_io VERSION 2.2.1)
 
 find_package (ament_cmake REQUIRED)
 find_package (rclcpp REQUIRED)
@@ -40,13 +40,13 @@ set (REQUIRED_CISST_LIBRARIES
      cisstQt
      )
 
-find_package (cisst 1.2.0 REQUIRED ${REQUIRED_CISST_LIBRARIES})
+find_package (cisst 1.2.1 REQUIRED ${REQUIRED_CISST_LIBRARIES})
 
 if (cisst_FOUND_AS_REQUIRED)
 
   include (${CISST_USE_FILE})
 
-  find_package (sawRobotIO1394 2.2.0 REQUIRED)
+  find_package (sawRobotIO1394 2.2.1 REQUIRED)
 
   include_directories (
     ${robot_io_SOURCE_DIR}
