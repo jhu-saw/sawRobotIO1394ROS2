@@ -31,7 +31,3 @@ repositories:
     type: git
     url: git@github.com:collaborative-robotics/ros2_crtk_msgs.git
     version: main
-  crtk/crtk_python_client:
-    type: git
-    url: git@github.com:collaborative-robotics/ros2_crtk_python_client.git
-    version: main
